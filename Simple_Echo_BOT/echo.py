@@ -169,7 +169,7 @@ def send_message(message):
     time.sleep(random.uniform(0.1,1))
     #print BOT_template & responses
     print(bot_template.format(responses))
-    if Voice_effect == True:
+    if Voice_effect is True:
         sound_message(responses)
         
     
