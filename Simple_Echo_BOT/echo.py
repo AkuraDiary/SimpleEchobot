@@ -146,18 +146,32 @@ def sound_message(response):
     speak.say(response)
     speak.runAndWait()
 
+def speech_setting(filename):
+  file = open(filename  , "r")
+  content = file.read()
+  file.close
+  return(str(content))
+  
 #pengirim pesan
 #send message
+Voice_effect = True
+if speech_setting("voice_setting.txt") == "off":
+    Voice_effect = False
+elif "on" : 
+    Voice_effect = True
+
 def send_message(message):
     #print user_template & message
     #print(user_template.format(message))
 
     responses = respond(message)
     
-    #time.sleep(random.uniform(0.1,1))
+    time.sleep(random.uniform(0.1,1))
     #print BOT_template & responses
     print(bot_template.format(responses))
-    sound_message(responses)
+    if Voice_effect == True:
+        sound_message(responses)
+        
     
 """def temp_msg(msg):
   print(msg)

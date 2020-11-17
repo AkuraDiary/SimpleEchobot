@@ -15,7 +15,7 @@ keywords = {
     'question' : ['do you mind','what do you', 'what can you do','can you'], #9
     'AYcircum' : ['how are you', 'how do you do', 'how\'s life','how\'s going', 'what\'s wrong with you'], #10
     'beat' : ['by the way', 'btw', 'you know what','\.....','um','hm'], #11
-    'callyou' : ['echo bot','oi', 'hei echo', 'echo', 'bot'], #12
+    'callyou' : ['echo bot','oi', 'hei echo', 'echo', 'bot', "you there"], #12
     'old' : ['how old','how old are you?', 'old', 'your birthday'], #13
     'think' : ['what do you think','what do you think about', 'have you ever think', 'think', 'thinking about',],#14
     '+Uanswer' : ['nice','yes', 'sure', 'why not', 'yes iam','great','interesting', 'really', 'ok','okay','yeah'],#15
@@ -24,6 +24,7 @@ keywords = {
     'comand' : ['\@','\$','\>','\/',],#18
     'askcall' : ['can i call you', 'can i call you echo', 'what should i call you',],#19
     'offense' : ['shit', 'fuck', 'bitch',], #20
+    'readme':['info', 'info about you', ],#21
 
 }
 
@@ -135,5 +136,6 @@ responses = {
       'usrname' : ['Hello, {0}!', 'hey {0}, iam echo bot', 'nice to meet you {0}', '{0}? thats a great name!'],
       'askcall' : ['echo','echo BOT','yes','why not','yes, you can call me{0}','you can call me echo','why you wanna call me {0} ?'],
       'offense' : ['woah woah woah','easy buddy','keep calm bruh','no offensive word please',],
+      'readme' : ['okay', 'wait','hold up', 'wait a sec'],
 
     }

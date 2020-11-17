@@ -16,5 +16,7 @@ def set_alarm(timing):
             notification = ToastNotifier()
             winsound.Beep(frequency=2500,duration=2000)
             notification.show_toast("Alarm", message, duration =50)
-            exit()
+            #exit()
+            import Echo_BOT as EC
+            EC.main()
             break

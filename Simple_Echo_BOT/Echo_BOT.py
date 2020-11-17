@@ -9,8 +9,12 @@ ECHO BOT akan merespon inputan yang anda masukkan
 """
 print("welcome to Simple ECHO_BOT")
 print("Type \"help\" or \"info\" for more information.\n")
-temp = ""
-
+#temp = ""
+def read_file(filename):
+  file = open(filename  , "r")
+  content = file.read()
+  print(content)
+  file.close
 
 #ini untuk perulanganya 
 #this is looping
@@ -21,12 +25,16 @@ def main():
     #temp = pesan
     #ec.temp_msg(temp)
     #print(temp)
-
     ec.send_message(pesan)
     if 'bye' in pesan:
       time.sleep(0.5)
       exit()
       break
-
-print(temp)
+    elif 'info' in pesan:
+      read_file("INFO.txt")
+      print("\n")
+    #if 'info' in pesan:
+    # read_file("README.txt")
+    
+#print(temp)
 main()
